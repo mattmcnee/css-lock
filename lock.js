@@ -3,17 +3,16 @@ const lock = document.getElementById('lock');
 
 lock.addEventListener("click", lockClicked);
 
-// Function to translate and rotate the div
-function translate() {
-  // Apply translation
+function translateLock() {
    bolt.style.transform = `translateY(-30px)`;
 }
 
-function rotate(){
+function rotateLock(){
 lock.style.transform += ` rotateY(90deg)`;
 }
 
 function lockClicked() {
-  setTimeout(translate, 100);
-  setTimeout(rotate, 550);
+  setTimeout(translateLock, 100);
+  setTimeout(rotateLock, 550);
+  // Code to do after lock is clicked
 }
